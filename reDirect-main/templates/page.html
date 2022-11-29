@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redirect</title>
+    <script src="https://kit.fontawesome.com/0148967ed9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <a class="active" href="#home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#changelinks"><i class="fa-solid fa-link"></i> Change Links</a>
+        <a href="#about"><i class="fa-solid fa-circle-info"></i> About the Project</a>
+    </div>
+    <div class="top" style="position: fixed;"><a href="#">to the top</a></div>
+    <div class="container" id="home">
+        <h1 class="typed-out">redirect</h1>
+    </div>
+    <div class="apps">
+            <div class="icon" id="i1">
+                <h2>1</h2>
+                <div class="content" id="result1">Google Chrome</div>
+            </div>
+      
+            <div class="icon" id="i2">
+                <h2>2</h2>
+                <div class="content" id="c2">Internet Explorer</div>
+            </div>
+      
+        
+            <div class="icon" id="i3">
+                <h2>3</h2>
+                <div class="content" id="c3">Calculator</div>
+            </div>
+       
+            <div class="icon" id="i4">
+                <h2>4</h2>
+                <div class="content" id="c4">Disney+</div>
+            </div>
+     
+      
+            <div class="icon" id="i5">
+                <h2>5</h2>
+                <div class="content" id="c5">Google Docs</div>
+            </div>
+     
+    </div>
+    <h2 id="changelinks" class="bluebg">change a link</h2>
+    <p>
+        Looking for something else? Add your preset here!
+    </p>
+    <div class="changers">
+        <div class="changer">
+            <p>
+                <h3>link 1:</h3>
+                <textarea cols="40" id="SearchText1" rows="1" placeholder="Make sure to type a valid URL with https://"></textarea>
+                <br /><button onclick="relabel1()" type="button">Update link</button><br />
+                <h4>new label:</h4>
+                <textarea cols="40" id="label1" rows="1" placeholder="This will relabel the old one above."></textarea>
+                <br /><button onclick="l1()" type="button">Relabel</button>
+            </p>
+        </div>
+        <div class="changer">
+            <p>
+                <h3>link 2:</h3>
+                <textarea cols="40" id="SearchText2" rows="1" placeholder="Make sure to type a valid URL with https://"></textarea>
+                <br /><button onclick="relabel2()" type="button">Update link</button><br />
+                <h4>new label:</h4>
+                <textarea cols="40" id="label2" rows="1" placeholder="This will relabel the old one above."></textarea>
+                <br /><button onclick="l2()" type="button">Relabel</button>
+            </p>
+        </div>
+        <div class="changer">
+            <p>
+                <h3>link 3:</h3>
+                <textarea cols="40" id="SearchText3" rows="1" placeholder="Make sure to type a valid URL with https://"></textarea>
+                <br /><button onclick="relabel3()" type="button">Update link</button><br />
+                <h4>new label:</h4>
+                <textarea cols="40" id="label3" rows="1" placeholder="This will relabel the old one above."></textarea>
+                <br /><button onclick="l3()" type="button">Relabel</button>
+            </p>
+        </div>
+        <div class="changer">
+            <p>
+                <h3>link 4:</h3>
+                <textarea cols="40" id="SearchText4" rows="1" placeholder="Make sure to type a valid URL with https://"></textarea>
+                <br /><button onclick="relabel4()" type="button">Update link</button><br />
+                <h4>new label:</h4>
+                <textarea cols="40" id="label4" rows="1" placeholder="This will relabel the old one above."></textarea>
+                <br /><button onclick="l4()" type="button">Relabel</button>
+            </p>
+        </div>
+        <div class="changer">
+            <p>
+                <h3>link 5:</h3>
+                <textarea cols="40" id="SearchText5" rows="1" placeholder="Make sure to type a valid URL with https://"></textarea>
+                <br /><button onclick="relabel5()" type="button">Update link</button><br />
+                <h4>new label:</h4>
+                <textarea cols="40" id="label5" rows="1" placeholder="This will relabel the old one above."></textarea>
+                <br /><button onclick="l5()" type="button">Relabel</button>
+            </p>
+        </div>
+    </div>
+
+    <div id="about">
+        <h2 class="bluebg">about the project</h2>
+        <h3>meet the team!</h3>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src= "https://i.imgur.com/v2k6vjW.png" alt="Lara" style="width:100%; border-radius: 5em;" />
+                    <div class="con">
+                        <h2>Lara El-Aloul</h2>
+                        <p class="title">2nd Year Software Engineering @ WesternU</p>
+                        <a href="https://www.linkedin.com/in/lara-el-aloul/" class="linkedin"><img style="width:10px" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" /> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="https://i.imgur.com/OE2hPyr.png" alt="Shiv" style="width:100%; border-radius: 5em" />
+                    <div class="con">
+                        <h2>Shiv Patel</h2>
+                        <p class="title">2nd Year Electrical and Artificial Intelligence Systems Engineering @ WesternU</p>
+                        <a href="https://www.linkedin.com/in/shiv-patel-6887a9220/" class="linkedin"><img style="width:10px" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" /> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="https://i.imgur.com/yMmlkFc.png" alt="Sundus" style="width:100%; border-radius: 5em" />
+                    <div class="con">
+                        <h2>Sundus Salam</h2>
+                        <p class="title">3rd Year Electrical Engineering @ WesternU</p>
+                        <a href="https://www.linkedin.com/in/sundus-salam-7464361b4/" class="linkedin"><img style="width:10px" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" /> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="https://i.imgur.com/eqn5MGv.png" alt="Swathi" style="width:100%;border-radius: 5em" />
+                    <div class="con">
+                        <h2>Swathi Thushiyandan</h2>
+                        <p class="title">2nd Year Software Engineering @ WesternU</p>
+                        <a href="https://www.linkedin.com/in/swathi-thushiyandan/" class="linkedin"><img style="width:10px" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" /> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="journey">
+            <h3>the reDirect journey</h3>
+            <p>We created reDirect as part of our submission to Hack Western 9, Western University's annual hackathon.</p>
+            <p>
+                With Hack Western 9 being the first hackathon to be back in-person after three years, we realized that there has been a surge of people who have started to work from home. Now, don't get us wrong, there are plenty of reasons why someone might willingly choose to work from home.
+                They no longer have to wake up earlier to transit to work. They get to work from the convenience of their home. However, problems have also risen from this new experience for some, including a lack of organizational systems when it comes to at-home working.
+            </p>
+            <p>reDirect was created to act as an all-in-one customizable hub that allows users to conveniently open up their most used tabs for work. Users can use our preset links or customize their hub to be their own.</p>
+            <p>
+                You may be wondering, <i>"What's so revolutonary about reDirect?"</i> Well, the magic happens behind the screen. With the help of machine intelligence and machine learning, reDirect can read how many fingers you hold up and send you to the page you want. Technology is crazy these days, isn't it?'<br />
+                All you have to do is leave your webcam on and while the reDirect tab is open, it can open up whatever tab you like as soon as you hold up the appropriate amount of fingers.
+            </p>
+            <p>We hope you enjoy and behefit from reDirect, and learn something new as well! We had a blast creating this project together and can't wait to further develop it in the near future.</p>
+            <p><i>- The reDirect Team</i></p>
+        </div>
+    </div>
+
+
+
+    <script>
+function relabel1() {
+            var result = document.getElementById("SearchText1").value;
+            document.getElementById("result1").innerHTML = result;
+            document.getElementById("link1").href = result;
+}
+
+function relabel2() {
+            var result = document.getElementById("SearchText2").value;
+            document.getElementById("result2").innerHTML = result;
+            document.getElementById("link2").href = result;
+}
+
+function relabel3() {
+            var result = document.getElementById("SearchText3").value;
+            document.getElementById("result3").innerHTML = result;
+            document.getElementById("link3").href = result;
+}
+
+
+function relabel4() {
+            var result = document.getElementById("SearchText4").value;
+            document.getElementById("result4").innerHTML = result;
+            document.getElementById("link4").href = result;
+}
+
+
+function relabel5() {
+            var result = document.getElementById("SearchText5").value;
+            document.getElementById("result5").innerHTML = result;
+            document.getElementById("link5").href = result;
+}
+
+
+function l1() {
+            var label = document.getElementById("label1").value;
+            document.getElementById("result1").innerHTML = label;
+}
+function l2() {
+            var label = document.getElementById("label2").value;
+            document.getElementById("result2").innerHTML = label;
+}
+function l3() {
+            var label = document.getElementById("label3").value;
+            document.getElementById("result3").innerHTML = label;
+}
+function l4() {
+            var label = document.getElementById("label4").value;
+            document.getElementById("result4").innerHTML = label;
+}
+function l5() {
+            var label = document.getElementById("label5").value;
+            document.getElementById("result5").innerHTML = label;
+}
+
+    </script>
+    <!-- <py-script> print('Now you can!') </py-script>|-->
+</body>
+</html>
